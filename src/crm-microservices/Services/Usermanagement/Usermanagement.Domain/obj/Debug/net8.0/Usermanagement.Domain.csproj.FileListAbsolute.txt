@@ -1,0 +1,12 @@
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\bin\Debug\net8.0\Usermanagement.Domain.deps.json
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\bin\Debug\net8.0\Usermanagement.Domain.dll
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\bin\Debug\net8.0\Usermanagement.Domain.pdb
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.AssemblyInfoInputs.cache
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.AssemblyInfo.cs
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.dll
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\refint\Usermanagement.Domain.dll
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.pdb
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\ref\Usermanagement.Domain.dll
+C:\Projects\src\crm-microservices\Services\Usermanagement\Usermanagement.Domain\obj\Debug\net8.0\Usermanagement.Domain.csproj.AssemblyReference.cache
