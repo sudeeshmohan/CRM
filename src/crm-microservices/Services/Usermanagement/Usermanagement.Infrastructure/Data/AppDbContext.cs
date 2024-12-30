@@ -16,28 +16,7 @@ namespace Usermanagement.Infrastructure.Data
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
-        //public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        //{
-        //    var entries = ChangeTracker
-        //        .Entries<BaseEntity>();
 
-        //    foreach (var entry in entries)
-        //    {
-        //        if (entry.State == EntityState.Added)
-        //        {
-        //            entry.Entity.CreatedDate = DateTime.UtcNow;
-        //            entry.Entity.UpdatedDate = DateTime.UtcNow;
-        //            entry.Entity.IsDeleted = false;
-        //        }
-
-        //        if (entry.State == EntityState.Modified)
-        //        {
-        //            entry.Entity.UpdatedDate = DateTime.UtcNow;
-        //        }
-        //    }
-
-        //    return base.SaveChangesAsync(cancellationToken);
-        //}
     }
 }
 
