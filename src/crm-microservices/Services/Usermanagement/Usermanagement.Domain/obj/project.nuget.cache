@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L1hGf/ZEQRXm05xxqFWHYbvyJXJhV/nsY+9f8mJnKsbvYy2+Wmjt6TBK4qkAdoZm6GWxqUMffRu1LzblrIYeIw==",
+  "dgSpecHash": "+/iVdgBswFNWhLyZn4HUP7Wgqv5dUpZhi9EkWNO6s2M7aMLRUKhISovNkLzVQQDeGoch7EqRUtCVMF3jkupUqA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Domain\\Usermanagement.Domain.csproj",
+  "projectFilePath": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Domain\\Usermanagement.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sudee\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\sudee\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

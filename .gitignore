@@ -1,96 +1,41 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# .NET Core build and debug files
+bin/
+obj/
 
-/src/crm-microservices/Services/Identity/Identity.Service/bin/Debug/net8.0
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/bin/Debug/net8.0/BuildingBlocks.dll
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/bin/Debug/net8.0/BuildingBlocks.pdb
-/src/crm-microservices/.vs/crm-microservices/v17/.futdcache.v2
-/src/crm-microservices/.vs/crm-microservices/v17/.suo
-/src/crm-microservices/.vs/crm-microservices/DesignTimeBuild/.dtbcache.v2
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/034bd310-c9fc-44e0-9b47-069621a51f64.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/0a8830ea-8354-4b7a-a1ac-11c49534acbe.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/544095de-f86c-4c0c-bbc7-273a2f969453.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/600e8881-0c19-4d42-a154-f51d0664b682.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/6eef36bd-5700-40f0-a83d-5350063d4376.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/aae08cfb-8b26-4a6e-b4bf-78db2004af02.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/b110f996-0924-4e07-86b9-6c10a3dcad93.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/b61be6b5-d0d6-4b93-99e4-79a4409e57e2.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/c973287c-85d9-477e-808a-d7e83964e046.vsidx
-/src/crm-microservices/.vs/crm-microservices/FileContentIndex/cabc24bf-09f7-4518-97fe-6d72d790ba42.vsidx
-/src/crm-microservices/.vs/ProjectEvaluation/crm-microservices.metadata.v7.bin
-/src/crm-microservices/.vs/ProjectEvaluation/crm-microservices.projects.v7.bin
-/src/crm-microservices/Services/Identity/Identity.Service/obj/Debug/net8.0
-/src/crm-microservices/Services/Identity/Identity.Service/obj
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/BuildingBlocks.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/BuildingBlocks.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.API.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.API.exe
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.API.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Application.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Domain.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Infrastructure.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/bin/Debug/net8.0/Usermanagement.Infrastructure.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/ref/Usermanagement.API.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/refint/Usermanagement.API.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/apphost.exe
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.AssemblyInfo.cs
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.AssemblyInfoInputs.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.csproj.AssemblyReference.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.csproj.FileListAbsolute.txt
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.sourcelink.json
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/BuildingBlocks.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/BuildingBlocks.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/Usermanagement.Application.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/bin/Debug/net8.0/Usermanagement.Domain.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/ref/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/refint/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.AssemblyInfo.cs
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.AssemblyInfoInputs.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.csproj.AssemblyReference.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.csproj.FileListAbsolute.txt
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.sourcelink.json
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/bin/Debug/net8.0/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/bin/Debug/net8.0/Usermanagement.Domain.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/ref/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/refint/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.AssemblyInfo.cs
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.AssemblyInfoInputs.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.csproj.FileListAbsolute.txt
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.sourcelink.json
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/BuildingBlocks.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/BuildingBlocks.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Application.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Application.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Domain.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Domain.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Infrastructure.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/bin/Debug/net8.0/Usermanagement.Infrastructure.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/ref/Usermanagement.Infrastructure.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/refint/Usermanagement.Infrastructure.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.AssemblyInfo.cs
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.AssemblyInfoInputs.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.csproj.AssemblyReference.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.csproj.CoreCompileInputs.cache
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.csproj.FileListAbsolute.txt
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.dll
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.pdb
-/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.sourcelink.json
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/ref/BuildingBlocks.dll
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/refint/BuildingBlocks.dll
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.AssemblyInfo.cs
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.AssemblyInfoInputs.cache
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.csproj.FileListAbsolute.txt
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.dll
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.pdb
-/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.sourcelink.json
+# User-specific files
+.vs/
+.idea/
+.vscode/
+
+# ASP.NET Core
+wwwroot/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files (if building)
+*.pdb
+
+# macOS Finder
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# ASP.NET Core Data Protection keys
+App_Data/
+
+# Logs
+logs/

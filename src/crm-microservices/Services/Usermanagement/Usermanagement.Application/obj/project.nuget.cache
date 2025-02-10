@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RzguyiJWo8Oci522I1f7U5/2dvzVhqMG8s3goiIxXqMXA/hFfJjxUEBDsCkS9WfPsq4/rD/Qkpln65p9Qv416Q==",
+  "dgSpecHash": "eBKkjq0zsIqCXNNygI14NUjTnkXmqrxEe7MWebjHwnNBryeOYF6hN8bWg0pkYYIURgqGrBIXiFqZUAn936//8w==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj",
+  "projectFilePath": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sudee\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\sudee\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

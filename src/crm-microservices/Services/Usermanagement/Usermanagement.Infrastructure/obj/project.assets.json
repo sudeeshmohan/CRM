@@ -2944,11 +2944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\Usermanagement.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\Usermanagement.Infrastructure.csproj",
       "projectName": "Usermanagement.Infrastructure",
-      "projectPath": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\Usermanagement.Infrastructure.csproj",
+      "projectPath": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\Usermanagement.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\sudee\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\obj\\",
+      "outputPath": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2970,8 +2970,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj": {
-              "projectPath": "C:\\Projects\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj"
+            "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj": {
+              "projectPath": "C:\\Projects\\CRM\\src\\crm-microservices\\Services\\Usermanagement\\Usermanagement.Application\\Usermanagement.Application.csproj"
             }
           }
         }

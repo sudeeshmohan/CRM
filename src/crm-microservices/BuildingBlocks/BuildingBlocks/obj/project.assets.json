@@ -127,11 +127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
+      "projectUniqueName": "C:\\Projects\\CRM\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
       "projectName": "BuildingBlocks",
-      "projectPath": "C:\\Projects\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
+      "projectPath": "C:\\Projects\\CRM\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
       "packagesPath": "C:\\Users\\sudee\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\obj\\",
+      "outputPath": "C:\\Projects\\CRM\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

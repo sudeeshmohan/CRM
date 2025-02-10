@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SIFBpNzrYzwSKYOQvuirQ6gi+hZnMk8+Uj/X7lgZ56O+wBQMuWRXeM1p7E7kwOolcxSPiAhzBrbrfO1rNZlO6A==",
+  "dgSpecHash": "833gHI0mXQu2qg6X5yYZbJxIbsPfzZaiK//8Z5zVt2e+XkKTSG0Ol5rzvLxEMo7x0J+Rp0eleZdYlKY60YpF1w==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
+  "projectFilePath": "C:\\Projects\\CRM\\src\\crm-microservices\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sudee\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\sudee\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

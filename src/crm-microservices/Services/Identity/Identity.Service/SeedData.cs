@@ -79,7 +79,7 @@ namespace Identity.Service
                 {
                     Scheme = "demoidsrv",
                     DisplayName = "IdentityServer",
-                    Authority = "https://demo.duendesoftware.com",
+                    Authority = "https://localhost:5001",
                     ClientId = "login",
                 }.ToEntity());
                 context.SaveChanges();
@@ -159,6 +159,30 @@ namespace Identity.Service
             else
             {
                 Log.Debug("bob already exists");
+            }
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var superAdmin = roleManager.FindByNameAsync("SuperAdmin").Result;
+            if (superAdmin == null)
+            {
+                roleManager.CreateAsync(new IdentityRole("SuperAdmin")).GetAwaiter().GetResult();
+                roleManager.CreateAsync(new IdentityRole("Admin")).GetAwaiter().GetResult();
+                roleManager.CreateAsync(new IdentityRole("Customer")).GetAwaiter().GetResult();
+                userMgr.AddToRoleAsync(bob, "SuperAdmin").GetAwaiter().GetResult();
+                userMgr.AddToRoleAsync(alice, "SuperAdmin").GetAwaiter().GetResult();
+                userMgr.AddToRoleAsync(bob, "Admin").GetAwaiter().GetResult();
+                userMgr.AddToRoleAsync(bob, "Customer").GetAwaiter().GetResult();
+                var claims = userMgr.AddClaimsAsync(alice, new Claim[]
+                {
+                    new Claim("Username",alice?.Email??string.Empty),
+                    new Claim(JwtClaimTypes.Role,"SuperAdmin"),
+                }).Result;
+                var claims2 = userMgr.AddClaimsAsync(bob, new Claim[]
+              {
+                    new Claim("Username",bob?.Email??string.Empty),
+                    new Claim(JwtClaimTypes.Role,"SuperAdmin"),
+              }).Result;
+
+
             }
         }
 

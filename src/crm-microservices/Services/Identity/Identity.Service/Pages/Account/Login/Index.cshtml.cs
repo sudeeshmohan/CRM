@@ -6,9 +6,10 @@ using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
-using Duende.IdentityServer.Test;
+using Identity.Service.Model;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -18,9 +19,11 @@ namespace Identity.Service.Pages.Login
     [AllowAnonymous]
     public class Index : PageModel
     {
-        private readonly TestUserStore _users;
+
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IEventService _events;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IIdentityProviderStore _identityProviderStore;
 
@@ -34,15 +37,17 @@ namespace Identity.Service.Pages.Login
             IAuthenticationSchemeProvider schemeProvider,
             IIdentityProviderStore identityProviderStore,
             IEventService events,
-            TestUserStore? users = null)
+            SignInManager<ApplicationUser> signInManager,
+            UserManager<ApplicationUser> userManager)
         {
             // this is where you would plug in your own custom identity management library (e.g. ASP.NET Identity)
-            _users = users ?? throw new InvalidOperationException("Please call 'AddTestUsers(TestUsers.Users)' on the IIdentityServerBuilder in Startup or remove the TestUserStore from the AccountController.");
 
             _interaction = interaction;
             _schemeProvider = schemeProvider;
             _identityProviderStore = identityProviderStore;
             _events = events;
+            _signInManager = signInManager;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> OnGet(string? returnUrl)
@@ -58,7 +63,7 @@ namespace Identity.Service.Pages.Login
             return Page();
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPost(string? returnUrl)
         {
             // check if we are in the context of an authorization request
             var context = await _interaction.GetAuthorizationContextAsync(Input.ReturnUrl);
@@ -95,11 +100,12 @@ namespace Identity.Service.Pages.Login
 
             if (ModelState.IsValid)
             {
+                var user = await _signInManager.UserManager.FindByNameAsync(Input.Username);
                 // validate username/password against in-memory store
-                if (_users.ValidateCredentials(Input.Username, Input.Password))
+                var data = (await _signInManager.CheckPasswordSignInAsync(user, Input.Password, false));
+                if (user != null && data == Microsoft.AspNetCore.Identity.SignInResult.Success)
                 {
-                    var user = _users.FindByUsername(Input.Username);
-                    await _events.RaiseAsync(new UserLoginSuccessEvent(user.Username, user.SubjectId, user.Username, clientId: context?.Client.ClientId));
+                    await _events.RaiseAsync(new UserLoginSuccessEvent(user.UserName, user.Id, user.UserName, clientId: context?.Client.ClientId));
                     Telemetry.Metrics.UserLogin(context?.Client.ClientId, IdentityServerConstants.LocalIdentityProvider);
 
                     // only set explicit expiration here if user chooses "remember me". 
@@ -112,9 +118,9 @@ namespace Identity.Service.Pages.Login
                     };
 
                     // issue authentication cookie with subject ID and username
-                    var isuser = new IdentityServerUser(user.SubjectId)
+                    var isuser = new IdentityServerUser(user.Id)
                     {
-                        DisplayName = user.Username
+                        DisplayName = user.UserName
                     };
 
                     await HttpContext.SignInAsync(isuser, props);
