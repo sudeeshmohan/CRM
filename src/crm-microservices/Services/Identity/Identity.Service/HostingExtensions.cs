@@ -40,14 +40,14 @@ namespace Identity.Service
             var isBuilder = builder.Services
                 .AddIdentityServer(options =>
                 {
-                    //options.Events.RaiseErrorEvents = true;
-                    //options.Events.RaiseInformationEvents = true;
-                    //options.Events.RaiseFailureEvents = true;
-                    //options.Events.RaiseSuccessEvents = true;
-                    //options.KeyManagement.Enabled = false;
+                    options.Events.RaiseErrorEvents = true;
+                    options.Events.RaiseInformationEvents = true;
+                    options.Events.RaiseFailureEvents = true;
+                    options.Events.RaiseSuccessEvents = true;
+                    options.KeyManagement.Enabled = false;
 
                     // see https://docs.duendesoftware.com/identityserver/v5/fundamentals/resources/
-                    //options.EmitStaticAudienceClaim = true;
+                    options.EmitStaticAudienceClaim = true;
                 })
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<CustomProfileService>()

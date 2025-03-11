@@ -1,10 +1,12 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Usermanagement.Application.Command.UserDetails;
 using Usermanagement.Application.Dtos;
 
 namespace Usermanagement.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -36,6 +38,12 @@ namespace Usermanagement.API.Controllers
         {
 
             return Ok();
+        }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("validated");
         }
     }
 }

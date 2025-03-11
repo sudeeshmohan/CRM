@@ -72,6 +72,7 @@ namespace Identity.Service
                 Log.Debug("ApiScopes already populated");
             }
 
+
             if (!context.IdentityProviders.Any())
             {
                 Log.Debug("OIDC IdentityProviders being populated");

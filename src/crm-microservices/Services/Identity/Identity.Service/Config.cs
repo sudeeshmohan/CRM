@@ -30,7 +30,9 @@ namespace Identity.Service
                     ClientName = "Client Credentials Client",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
-                    AllowedScopes = { "scope1" }
+                    AllowedScopes = { "scope1" },
+                    AccessTokenType=AccessTokenType.Jwt,
+                    AllowAccessTokensViaBrowser = true
                 },
                 // interactive client using code flow + pkce
                 new Client
@@ -43,7 +45,9 @@ namespace Identity.Service
                         RequirePkce = true,
                        // RequireConsent = false,
                         AllowOfflineAccess = true,
-                        AllowedScopes = { "openid", "profile", "scope2" }
+                        AllowedScopes = { "openid", "profile", "scope2" },
+                         AccessTokenType=AccessTokenType.Jwt,
+                         AllowAccessTokensViaBrowser = true
                     },
                 //login client
                 new Client
@@ -52,7 +56,9 @@ namespace Identity.Service
                     ClientSecrets = { new Secret("your-secret-key".Sha256()) },
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AllowedScopes = { "api.scope","scope2" },
-                    AccessTokenLifetime = 3600
+                    AccessTokenLifetime = 3600,
+                    AccessTokenType=AccessTokenType.Jwt,
+                    AllowAccessTokensViaBrowser = true
                 }
             };
     }
