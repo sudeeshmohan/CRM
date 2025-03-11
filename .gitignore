@@ -6,7 +6,9 @@ obj/
 .vs/
 .idea/
 .vscode/
-
+bin/
+obj/
+Debug/
 
 
 # Windows Installer files
@@ -38,3 +40,11 @@ App_Data/
 
 # Logs
 logs/
+/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Debug/net8.0/Usermanagement.API.assets.cache
+/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/project.assets.json
+/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/project.nuget.cache
+/src/crm-microservices/Services/Usermanagement/Usermanagement.API/obj/Usermanagement.API.csproj.nuget.dgspec.json
+/src/crm-microservices/Services/Usermanagement/Usermanagement.Infrastructure/obj/Debug/net8.0/Usermanagement.Infrastructure.assets.cache
+/src/crm-microservices/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.assets.cache
+/src/crm-microservices/Services/Usermanagement/Usermanagement.Application/obj/Debug/net8.0/Usermanagement.Application.assets.cache
+/src/crm-microservices/Services/Usermanagement/Usermanagement.Domain/obj/Debug/net8.0/Usermanagement.Domain.assets.cache
