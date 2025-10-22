@@ -9,5 +9,6 @@ namespace Identity.Service.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+        public DbSet<Tenant> Tenants { get; set; }
     }
 }
