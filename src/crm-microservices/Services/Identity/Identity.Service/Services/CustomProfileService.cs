@@ -27,6 +27,7 @@ namespace Identity.Service.Services
                     new Claim(CustomClaimTypes.Email, user?.Email??string.Empty),
                     new Claim(CustomClaimTypes.UserId, user?.Id?.ToString()??string.Empty),
                     new Claim(CustomClaimTypes.Username, user?.UserName?.ToString()??string.Empty),
+                    new Claim(CustomClaimTypes.TenantId, user?.TenantId.ToString()??string.Empty),
                 };
                 foreach (var role in roles)
                 {

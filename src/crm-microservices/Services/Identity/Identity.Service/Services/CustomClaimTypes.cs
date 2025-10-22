@@ -5,5 +5,6 @@
     public const string UserId = "id";
     public const string Email = "email";
     public const string Username = "username";
+    public const string TenantId = "tenant_id";
 }
 

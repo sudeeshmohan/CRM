@@ -27,7 +27,6 @@ namespace Identity.Service
                 EnsureUsers(scope);
             }
         }
-
         private static void EnsureSeedData(ConfigurationDbContext context)
         {
             if (!context.Clients.Any())
@@ -92,6 +91,21 @@ namespace Identity.Service
         }
         private static void EnsureUsers(IServiceScope scope)
         {
+            var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            var defaultTenant = db.Tenants.FirstOrDefault(t => t.Name == "Default");
+            if (defaultTenant == null)
+            {
+                defaultTenant = new Tenant
+                {
+                    Name = "Default",
+                    Domain = "Default.local",
+                    IsActive = true,
+                    CreatedAt = DateTime.UtcNow
+                };
+                db.Tenants.Add(defaultTenant);
+            }
+            db.SaveChanges();
+
             var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
             var alice = userMgr.FindByNameAsync("alice").Result;
             if (alice == null)
@@ -101,6 +115,7 @@ namespace Identity.Service
                     UserName = "alice",
                     Email = "AliceSmith@email.com",
                     EmailConfirmed = true,
+                    TenantId = defaultTenant.Id
                 };
                 var result = userMgr.CreateAsync(alice, "Pass123$").Result;
                 if (!result.Succeeded)
@@ -114,6 +129,7 @@ namespace Identity.Service
                     new Claim(JwtClaimTypes.GivenName, "Alice"),
                     new Claim(JwtClaimTypes.FamilyName, "Smith"),
                     new Claim(JwtClaimTypes.WebSite, "http://alice.com"),
+                    new Claim("tenant_id", defaultTenant.Id.ToString()),
                             }).Result;
                 if (!result.Succeeded)
                 {
@@ -134,7 +150,8 @@ namespace Identity.Service
                 {
                     UserName = "bob",
                     Email = "BobSmith@email.com",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    TenantId = defaultTenant.Id
                 };
                 var result = userMgr.CreateAsync(bob, "Pass123$").Result;
                 if (!result.Succeeded)
@@ -148,6 +165,7 @@ namespace Identity.Service
                         new Claim(JwtClaimTypes.GivenName, "Bob"),
                         new Claim(JwtClaimTypes.FamilyName, "Smith"),
                         new Claim(JwtClaimTypes.WebSite, "http://bob.com"),
+                        new Claim("tenant_id", defaultTenant.Id.ToString()),
                         new Claim("location", "somewhere")
                                 }).Result;
                 if (!result.Succeeded)
